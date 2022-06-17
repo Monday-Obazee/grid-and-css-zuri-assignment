@@ -10,6 +10,22 @@ body {
 .container {
   background-color: hsl(0, 0%, 95%);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.head {
+  text-align: center;
+  margin-top: 3rem;
+}
+a {
+  background-color: hsl(31, 77%, 52%);
+  text-decoration: none;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: large;
+  color: #ffff;
+  padding: 1rem 3rem;
+  letter-spacing: 2px;
 }
 
 .boxs {
@@ -34,7 +50,7 @@ h1 {
 }
 p {
   color: hsla(0, 0%, 100%, 0.75);
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   font-family: "Lexend Deca", sans-serif;
 }
 .box1 {
@@ -107,4 +123,15 @@ button {
 .grid5 {
   grid-area: grid5;
   background-color: #01aefd;
+}
+
+/* media quaries start here */
+@media screen and (max-width: 600px) {
+  p {
+    margin-bottom: 1rem;
+  }
+  .boxs {
+    flex-direction: column;
+    height: 100vh;
+  }
 }
